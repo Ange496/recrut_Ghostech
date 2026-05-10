@@ -1,21 +1,21 @@
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                                                                              ║
-║                 ✅ GHOSTECH - PRÊT POUR LE DÉPLOIEMENT !                   ║
+║                  GHOSTECH - PRÊT POUR LE DÉPLOIEMENT !                   ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
-📂 Structure du projet :
+ Structure du projet :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 recrut_Ghostech/
 ├── ghostech-recrutement.html          ← Frontend (formulaire)
 ├── logi_ghostech.png                  ← Logo
 ├── flyer_ghostech.png                 ← Flyer (optionnel)
-├── render.yaml                        ← ✅ Config Render (CRÉÉ)
-├── .gitignore                         ← ✅ Pour GitHub (CRÉÉ)
-├── DEPLOY_RENDER.md                   ← ✅ Guide complet (CRÉÉ)
-├── RENDER_FINAL_STEPS.md              ← ✅ Prochaines étapes (CRÉÉ)
+├── render.yaml                        ←  Config Render (CRÉÉ)
+├── .gitignore                         ←  Pour GitHub (CRÉÉ)
+├── DEPLOY_RENDER.md                   ←  Guide complet (CRÉÉ)
+├── RENDER_FINAL_STEPS.md              ←  Prochaines étapes (CRÉÉ)
 ├── SETUP.md                           ← Documentation backend
 ├── QUICKSTART.md                      ← Démarrage rapide
 └── backend/
@@ -28,35 +28,35 @@ recrut_Ghostech/
     └── .gitignore
 
 
-📊 État actuel :
+ État actuel :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Backend fonctionnel            → Node.js + Express
-✅ Emails configurés              → Gmail + Nodemailer
-✅ Configuration Render créée     → render.yaml
-✅ GitHub configuré               → Repo pushé sur https://github.com/Ange496/recrut_Ghostech
-✅ Git prêt pour Render           → .gitignore créé
+ Backend fonctionnel            → Node.js + Express
+ Emails configurés              → Gmail + Nodemailer
+ Configuration Render créée     → render.yaml
+ GitHub configuré               → Repo pushé sur https://github.com/Ange496/recrut_Ghostech
+ Git prêt pour Render           → .gitignore créé
 
 
-🚀 3 étapes pour déployer sur Render :
+ 3 étapes pour déployer sur Render :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-1️⃣  ALLER SUR RENDER.COM
+1️  ALLER SUR RENDER.COM
     └─ Sign up avec GitHub
     └─ Autoriser l'accès aux repos
 
-2️⃣  CRÉER UN WEB SERVICE
+2️  CRÉER UN WEB SERVICE
     └─ Sélectionner le repo "recrut_Ghostech"
     └─ Render détecte automatiquement render.yaml
     └─ Cliquer "Create Web Service"
 
-3️⃣  AJOUTER LES VARIABLES D'ENV
+3️  AJOUTER LES VARIABLES D'ENV
     └─ Email: ghostech92@gmail.com
     └─ Email Pass: [Votre mot de passe app Gmail]
     └─ Cliquer "Deploy"
 
 
-📝 Variables d'environnement à configurer dans Render :
+ Variables d'environnement à configurer dans Render :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 KEY                VALUE
@@ -67,7 +67,7 @@ RECIPIENT_EMAIL    ghostech92@gmail.com
 PORT               3000
 
 
-🔑 Comment générer le mot de passe d'application Gmail :
+ Comment générer le mot de passe d'application Gmail :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Allez sur: https://myaccount.google.com/security
@@ -81,7 +81,7 @@ PORT               3000
 7. Collez-le dans Render sous EMAIL_PASS
 
 
-⚡ Une fois déployé :
+ Une fois déployé :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 URL de votre backend sera : https://ghostech-recrutement-backend.onrender.com
@@ -100,31 +100,31 @@ Puis committez et poussez sur GitHub:
    git push origin main
 
 
-📚 Documentation :
+ Documentation :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📖 RENDER_FINAL_STEPS.md    ← Lisez CECI en premier ! ⭐
+📖 RENDER_FINAL_STEPS.md    ← Lisez CECI en premier ! 
 📖 DEPLOY_RENDER.md          ← Guide complet avec tous les détails
 📖 backend/README.md         ← Documentation technique du backend
 
 
-💡 Conseils :
+ Conseils :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✨ Chaque fois que vous poussez sur GitHub, Render redéploie automatiquement
-✨ Les logs Render vous aident à déboguer les erreurs
-✨ Le déploiement est gratuit (500h/mois suffisent)
-✨ Pas besoin de gérer des serveurs - c'est 100% automatique
+ Chaque fois que vous poussez sur GitHub, Render redéploie automatiquement
+ Les logs Render vous aident à déboguer les erreurs
+ Le déploiement est gratuit (500h/mois suffisent)
+ Pas besoin de gérer des serveurs - c'est 100% automatique
 
 
-🎯 Prochaines actions :
+ Prochaines actions :
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 → Allez sur https://render.com
 → Créez un Web Service
 → Suivez les étapes du fichier "RENDER_FINAL_STEPS.md"
 → Testez le formulaire une fois déployé
-→ Profitez ! 🚀
+→ Profitez ! 
 
 
 ╔══════════════════════════════════════════════════════════════════════════════╗

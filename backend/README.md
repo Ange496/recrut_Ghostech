@@ -2,7 +2,7 @@
 
 Backend simple Node.js/Express pour traiter les candidatures du formulaire Ghostech.
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Installer les dépendances
 ```bash
@@ -37,7 +37,7 @@ RECIPIENT_EMAIL=ghostech92@gmail.com
 PORT=3000
 ```
 
-## 🏃 Lancer le serveur
+##  Lancer le serveur
 
 ### Mode production
 ```bash
@@ -51,7 +51,7 @@ npm run dev
 
 Le serveur démarre sur `http://localhost:3000`
 
-## 📋 Endpoints
+##  Endpoints
 
 ### POST `/api/submit-candidature`
 Envoie une candidature par email.
@@ -106,7 +106,7 @@ Vérifie que le serveur fonctionne.
 }
 ```
 
-## 🔗 Intégration Frontend
+##  Intégration Frontend
 
 Le formulaire HTML envoie automatiquement les données au backend :
 
@@ -118,35 +118,35 @@ const response = await fetch('http://localhost:3000/api/submit-candidature', {
 });
 ```
 
-## 📧 Emails envoyés
+##  Emails envoyés
 
 ### 1️⃣ Email à l'équipe Ghostech
 - **À** : ghostech92@gmail.com
-- **Sujet** : 🚀 Candidature Ghostech – [Poste] – [Nom]
+- **Sujet** :  Candidature Ghostech – [Poste] – [Nom]
 - **Contenu** : Détails complets de la candidature
 
 ### 2️⃣ Email de confirmation au candidat
 - **À** : Email du candidat
-- **Sujet** : ✅ Votre candidature Ghostech a été reçue
+- **Sujet** :  Votre candidature Ghostech a été reçue
 - **Contenu** : Confirmation d'réception
 
-## ⚠️ Troubleshooting
+##  Troubleshooting
 
-### ❌ "CORS error" - Les requêtes bloquées
+###  "CORS error" - Les requêtes bloquées
 - Le serveur backend doit être lancé
 - Vérifiez que le port est correct (3000 par défaut)
 - Vérifiez l'URL dans le frontend
 
-### ❌ "Auth failed" - Erreur d'authentification email
+###  "Auth failed" - Erreur d'authentification email
 - Vérifiez que vous utilisez un **mot de passe d'application** (pas le mot de passe Gmail)
 - Vérifiez la **vérification en deux étapes** est activée
 - Vérifiez l'email dans `.env`
 
-### ❌ "ECONNREFUSED" - Connexion refusée
+###  "ECONNREFUSED" - Connexion refusée
 - Assurez-vous que le serveur backend est lancé
 - Vérifiez le port (par défaut 3000)
 
-## 🚀 Déploiement
+##  Déploiement
 
 Options pour déployer le backend gratuitement :
 
@@ -155,5 +155,5 @@ Options pour déployer le backend gratuitement :
 3. **Railway** (gratuit au démarrage)
 4. **Vercel** (serverless)
 
-## 📝 Licences
+##  Licences
 MIT © Ghostech 2026

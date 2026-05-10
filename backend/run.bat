@@ -13,18 +13,18 @@ echo.
 :: Vérifier si Node.js est installé
 where node >nul 2>nul
 if %ERRORLEVEL% neq 0 (
-    echo ❌ Node.js n'est pas installé ou n'est pas dans le PATH
+    echo  Node.js n'est pas installé ou n'est pas dans le PATH
     echo Téléchargez-le sur https://nodejs.org/
     pause
     exit /b 1
 )
 
-echo ✅ Node.js trouvé: 
+echo  Node.js trouvé: 
 node --version
 echo.
 
 :: Accéder au dossier backend
-echo 📂 Accès au dossier backend...
+echo  Accès au dossier backend...
 cd backend
 
 :: Vérifier si node_modules existe
@@ -37,21 +37,21 @@ if not exist "node_modules" (
         pause
         exit /b 1
     )
-    echo ✅ Dépendances installées
+    echo  Dépendances installées
 ) else (
-    echo ✅ Dépendances déjà installées
+    echo  Dépendances déjà installées
 )
 
 echo.
 
 :: Vérifier si .env existe
 if not exist ".env" (
-    echo ❌ Fichier .env manquant !
+    echo  Fichier .env manquant !
     echo.
-    echo 📋 Création du fichier .env depuis .env.example...
+    echo  Création du fichier .env depuis .env.example...
     if exist ".env.example" (
         copy .env.example .env > nul
-        echo ✅ Fichier .env créé
+        echo  Fichier .env créé
         echo.
         echo ⚠️  IMPORTANT: Modifiez le fichier .env avec vos identifiants Gmail
         echo Voir: https://myaccount.google.com/security
@@ -59,12 +59,12 @@ if not exist ".env" (
         pause
         start notepad .env
     ) else (
-        echo ❌ Fichier .env.example introuvable
+        echo  Fichier .env.example introuvable
         pause
         exit /b 1
     )
 ) else (
-    echo ✅ Fichier .env trouvé
+    echo  Fichier .env trouvé
 )
 
 echo.

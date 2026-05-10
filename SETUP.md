@@ -1,4 +1,4 @@
-# 🚀 Ghostech - Formulaire de Recrutement
+#  Ghostech - Formulaire de Recrutement
 
 Structure du projet :
 ```
@@ -14,9 +14,9 @@ recrut_Ghostech/
     └── README.md                      # Documentation backend
 ```
 
-## 📋 DÉMARRAGE RAPIDE
+##  DÉMARRAGE RAPIDE
 
-### Étape 1️⃣ : Configurer le Backend
+### Étape 1️ : Configurer le Backend
 
 ```bash
 # 1. Accéder au dossier backend
@@ -32,7 +32,7 @@ cp .env.example .env
 # Voir la section "Configuration Gmail" du README.md du backend
 ```
 
-### Étape 2️⃣ : Lancer le Backend
+### Étape 2️ : Lancer le Backend
 
 ```bash
 # Mode développement (avec rechargement auto)
@@ -42,15 +42,15 @@ npm run dev
 npm start
 ```
 
-Vous verrez : `✅ Serveur Ghostech lancé sur http://localhost:3000`
+Vous verrez : ` Serveur Ghostech lancé sur http://localhost:3000`
 
-### Étape 3️⃣ : Ouvrir le Formulaire
+### Étape 3️ : Ouvrir le Formulaire
 
 Ouvrir simplement **`ghostech-recrutement.html`** dans un navigateur.
 
 ---
 
-## 🔧 Configuration Gmail
+##  Configuration Gmail
 
 ⚠️ **Important** : Vous devez utiliser un **mot de passe d'application**, pas votre mot de passe Gmail !
 
@@ -76,7 +76,7 @@ PORT=3000
 
 ---
 
-## 📊 Flux de fonctionnement
+##  Flux de fonctionnement
 
 ```
 1. Utilisateur remplit le formulaire HTML
@@ -98,7 +98,7 @@ PORT=3000
 
 ---
 
-## ✅ Vérifier que tout fonctionne
+##  Vérifier que tout fonctionne
 
 ### Test du backend
 ```bash
@@ -115,27 +115,27 @@ curl http://localhost:3000/api/health
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
-### ❌ "CORS error"
+###  "CORS error"
 - Assurez-vous que le backend est lancé (`npm run dev`)
 - Vérifiez le port (par défaut 3000)
 
-### ❌ "Cannot GET /api/submit-candidature"
+###  "Cannot GET /api/submit-candidature"
 - Vérifiez que vous envoyez une requête POST (pas GET)
 - Vérifiez l'URL du backend dans le code
 
-### ❌ "Auth failed"
+###  "Auth failed"
 - Vérifiez que vous utilisez un **mot de passe d'application** (pas le mot de passe Gmail)
 - Vérifiez que la **vérification en deux étapes** est activée sur Gmail
 
-### ❌ "ECONNREFUSED"
+###  "ECONNREFUSED"
 - Le backend n'est pas lancé
 - Lancez `npm run dev` dans le dossier backend
 
 ---
 
-## 🚀 Déploiement
+##  Déploiement
 
 ### Option 1 : Déployer le backend sur Render (gratuit)
 
@@ -168,10 +168,10 @@ const API_URL = 'https://votre-backend-url.com'; // Remplacer par votre URL
 
 ---
 
-## 📞 Support
+##  Support
 
 Pour des questions sur le backend, consultez `backend/README.md`
 
 ---
 
-**Ghostech © 2026** – Innover. Apprendre. Construire. 🚀
+**Ghostech © 2026** – Innover. Apprendre. Construire. 

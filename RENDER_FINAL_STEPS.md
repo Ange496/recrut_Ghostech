@@ -1,12 +1,12 @@
-# ✅ Prêt pour Render !
+#  Prêt pour Render !
 
-## 🎯 Étapes restantes
+##  Étapes restantes
 
 Votre projet est maintenant prêt pour Render. Voici ce qu'il reste à faire :
 
 ---
 
-## 📝 ÉTAPE 1 : Aller sur Render et créer le service
+##  ÉTAPE 1 : Aller sur Render et créer le service
 
 1. Allez sur **https://render.com**
 2. **Sign up** avec votre compte GitHub
@@ -14,7 +14,7 @@ Votre projet est maintenant prêt pour Render. Voici ce qu'il reste à faire :
 
 ---
 
-## 📝 ÉTAPE 2 : Créer un Web Service
+##  ÉTAPE 2 : Créer un Web Service
 
 1. Dans le dashboard, cliquez **New +** > **Web Service**
 2. Sélectionnez le repo **`recrut_Ghostech`**
@@ -29,7 +29,7 @@ Votre projet est maintenant prêt pour Render. Voici ce qu'il reste à faire :
 
 ---
 
-## 📝 ÉTAPE 3 : Ajouter les variables d'environnement
+##  ÉTAPE 3 : Ajouter les variables d'environnement
 
 Dans Render, onglet **Environment**, ajoutez :
 
@@ -51,7 +51,7 @@ Dans Render, onglet **Environment**, ajoutez :
 
 ---
 
-## 📝 ÉTAPE 4 : Déployer
+##  ÉTAPE 4 : Déployer
 
 1. Cliquez **Create Web Service**
 2. Render commence le déploiement (2-3 min)
@@ -64,7 +64,7 @@ https://ghostech-recrutement-backend.onrender.com
 
 ---
 
-## 📝 ÉTAPE 5 : Mettre à jour le frontend
+##  ÉTAPE 5 : Mettre à jour le frontend
 
 Ouvrez `ghostech-recrutement.html` et trouvez cette ligne :
 
@@ -87,7 +87,7 @@ git push origin main
 
 ---
 
-## ✅ ÉTAPE 6 : Tester
+##  ÉTAPE 6 : Tester
 
 ### Tester l'API
 ```bash
@@ -99,22 +99,22 @@ curl https://ghostech-recrutement-backend.onrender.com/api/health
 1. Ouvrez `ghostech-recrutement.html` dans votre navigateur
 2. Remplissez le formulaire
 3. Cliquez **Envoyer ma candidature**
-4. Vous devriez voir ✅ **Candidature envoyée !**
+4. Vous devriez voir  **Candidature envoyée !**
 5. Vérifiez votre email `ghostech92@gmail.com`
 
 ---
 
 ## 📊 Avantages Render
 
-- ✅ **Gratuit** (500 heures/mois = complet gratuit)
-- ✅ **Déploiement automatique** à chaque push GitHub
-- ✅ **Redémarrage automatique** si le serveur crash
-- ✅ **Logs en temps réel**
-- ✅ **HTTPS inclus**
+-  **Gratuit** (500 heures/mois = complet gratuit)
+-  **Déploiement automatique** à chaque push GitHub
+-  **Redémarrage automatique** si le serveur crash
+-  **Logs en temps réel**
+-  **HTTPS inclus**
 
 ---
 
-## 🔄 Mise à jour future
+##  Mise à jour future
 
 Chaque fois que vous modifiez le backend :
 
@@ -128,19 +128,19 @@ Render détecte automatiquement les changements et redéploie ! ✨
 
 ---
 
-## 🆘 Aide en cas d'erreur
+##  Aide en cas d'erreur
 
-### ❌ "Build failed"
+###  "Build failed"
 - Vérifiez que le fichier `backend/package.json` existe
 - Vérifiez que `backend/server.js` existe
 - Regardez les **logs** dans Render pour plus de détails
 
-### ❌ "Service is not responding"
+###  "Service is not responding"
 - Vérifiez les **logs** dans Render
 - Vérifiez que **EMAIL_PASS** est correct
 - Attendez 2-3 min (démarrage du service)
 
-### ❌ "The form doesn't send"
+###  "The form doesn't send"
 - Vérifiez que **API_URL** est correcte dans le HTML
 - Ouvrez les **dev tools** du navigateur (F12) > Console
 - Regardez les erreurs
@@ -154,4 +154,4 @@ Render détecte automatiquement les changements et redéploie ! ✨
 
 ---
 
-**Ghostech © 2026** 🚀 Innover. Apprendre. Construire.
+**Ghostech © 2026**  Innover. Apprendre. Construire.

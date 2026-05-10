@@ -1,16 +1,16 @@
-# 🚀 Guide de Déploiement Render
+#  Guide de Déploiement Render
 
-## ✅ Prérequis
+##  Prérequis
 
-- ✅ Compte GitHub
-- ✅ Compte Render (gratuit)
-- ✅ Le projet prêt localement
+-  Compte GitHub
+-  Compte Render (gratuit)
+-  Le projet prêt localement
 
 ---
 
-## 📝 Étapes de déploiement
+##  Étapes de déploiement
 
-### Étape 1️⃣ : Créer un repo GitHub
+### Étape 1️ : Créer un repo GitHub
 
 #### Option A : Depuis GitHub Desktop (facile)
 1. Ouvrez **GitHub Desktop**
@@ -19,7 +19,7 @@
 4. Path : `c:\Users\hp\Downloads\recrut_Ghostech`
 5. Cliquez **Create Repository**
 6. Dans GitHub Desktop : **Publish repository**
-7. ✅ Repo créé sur GitHub
+7.  Repo créé sur GitHub
 
 #### Option B : Depuis la ligne de commande
 ```bash
@@ -39,7 +39,7 @@ git push -u origin main
 
 ---
 
-### Étape 2️⃣ : Configurer Render
+### Étape 2️ : Configurer Render
 
 1. Allez sur **https://render.com**
 2. Cliquez **Sign up** et connectez avec GitHub
@@ -48,7 +48,7 @@ git push -u origin main
 
 ---
 
-### Étape 3️⃣ : Créer un nouveau service
+### Étape 3️ : Créer un nouveau service
 
 1. Dans le dashboard Render, cliquez **New +**
 2. Sélectionnez **Web Service**
@@ -62,7 +62,7 @@ git push -u origin main
 
 ---
 
-### Étape 4️⃣ : Configurer les variables d'environnement
+### Étape 4️ : Configurer les variables d'environnement
 
 1. Dans Render, allez à votre service
 2. Cliquez l'onglet **Environment**
@@ -89,7 +89,7 @@ Pour créer un mot de passe d'application :
 
 ---
 
-### Étape 5️⃣ : Déployer
+### Étape 5️ : Déployer
 
 1. Retournez à votre service Render
 2. Cliquez **Deploy**
@@ -98,7 +98,7 @@ Pour créer un mot de passe d'application :
 
 Une fois terminé, vous verrez un message comme :
 ```
-✅ Serveur Ghostech lancé sur http://localhost:3000
+ Serveur Ghostech lancé sur http://localhost:3000
 ```
 
 Et une URL comme :
@@ -108,7 +108,7 @@ https://ghostech-recrutement-backend.onrender.com
 
 ---
 
-### Étape 6️⃣ : Mettre à jour le frontend
+### Étape 6️ : Mettre à jour le frontend
 
 Dans le fichier HTML `ghostech-recrutement.html`, trouvez la ligne :
 
@@ -126,7 +126,7 @@ const API_URL = 'https://ghostech-recrutement-backend.onrender.com';
 
 ---
 
-### Étape 7️⃣ : Tester le déploiement
+### Étape 7️ : Tester le déploiement
 
 1. Testez l'API :
 ```bash
@@ -144,7 +144,7 @@ curl https://ghostech-recrutement-backend.onrender.com/api/health
 
 ---
 
-## 📊 Avantages du déploiement Render
+##  Avantages du déploiement Render
 
 - ✅ **Gratuit** (500 heures/mois)
 - ✅ **Automatique** : Déploie à chaque push sur main
@@ -154,7 +154,7 @@ curl https://ghostech-recrutement-backend.onrender.com/api/health
 
 ---
 
-## 🔄 Mise à jour future
+##  Mise à jour future
 
 Pour mettre à jour le backend :
 
@@ -165,30 +165,30 @@ git add .
 git commit -m "Description de la modification"
 git push origin main
 ```
-3. Render détecte le changement et redéploie automatiquement ✨
+3. Render détecte le changement et redéploie automatiquement 
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
-### ❌ "Build failed"
+###  "Build failed"
 - Vérifiez que `backend/package.json` existe
 - Vérifiez que `backend/server.js` existe
 - Regardez les logs Render pour plus de détails
 
-### ❌ "EMAIL_PASS incorrect"
+###  "EMAIL_PASS incorrect"
 - Vérifiez que vous utilisez un **mot de passe d'application** (pas Gmail)
 - Vérifiez la vérification 2FA activée sur Gmail
 - Regénérez le mot de passe
 
-### ❌ "Service not starting"
+###  "Service not starting"
 - Vérifiez les logs (onglet **Logs** dans Render)
 - Vérifiez les variables d'env sont correctes
 - Redéployez manuellement
 
 ---
 
-## 📞 Support
+##  Support
 
 - Docs Render : https://render.com/docs
 - Docs Node.js : https://nodejs.org/
@@ -196,4 +196,4 @@ git push origin main
 
 ---
 
-**Ghostech © 2026** 🚀 Innover. Apprendre. Construire.
+**Ghostech © 2026**  Innover. Apprendre. Construire.

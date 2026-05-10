@@ -17,54 +17,54 @@ echo
 
 # Vérifier si Node.js est installé
 if ! command -v node &> /dev/null; then
-    echo -e "${RED}❌ Node.js n'est pas installé${NC}"
+    echo -e "${RED} Node.js n'est pas installé${NC}"
     echo "Téléchargez-le sur https://nodejs.org/"
     exit 1
 fi
 
-echo -e "${GREEN}✅ Node.js trouvé:${NC}"
+echo -e "${GREEN} Node.js trouvé:${NC}"
 node --version
 echo
 
 # Accéder au dossier backend
-echo -e "${BLUE}📂 Accès au dossier backend...${NC}"
+echo -e "${BLUE} Accès au dossier backend...${NC}"
 cd backend
 
 # Vérifier si node_modules existe
 if [ ! -d "node_modules" ]; then
     echo
-    echo -e "${BLUE}📥 Installation des dépendances...${NC}"
+    echo -e "${BLUE} Installation des dépendances...${NC}"
     npm install
     if [ $? -ne 0 ]; then
-        echo -e "${RED}❌ Erreur lors de l'installation des dépendances${NC}"
+        echo -e "${RED} Erreur lors de l'installation des dépendances${NC}"
         exit 1
     fi
-    echo -e "${GREEN}✅ Dépendances installées${NC}"
+    echo -e "${GREEN} Dépendances installées${NC}"
 else
-    echo -e "${GREEN}✅ Dépendances déjà installées${NC}"
+    echo -e "${GREEN} Dépendances déjà installées${NC}"
 fi
 
 echo
 
 # Vérifier si .env existe
 if [ ! -f ".env" ]; then
-    echo -e "${RED}❌ Fichier .env manquant !${NC}"
+    echo -e "${RED} Fichier .env manquant !${NC}"
     echo
-    echo -e "${BLUE}📋 Création du fichier .env depuis .env.example...${NC}"
+    echo -e "${BLUE} Création du fichier .env depuis .env.example...${NC}"
     if [ -f ".env.example" ]; then
         cp .env.example .env
-        echo -e "${GREEN}✅ Fichier .env créé${NC}"
+        echo -e "${GREEN} Fichier .env créé${NC}"
         echo
         echo -e "${YELLOW}⚠️  IMPORTANT: Modifiez le fichier .env avec vos identifiants Gmail${NC}"
         echo "Voir: https://myaccount.google.com/security"
         echo
         nano .env
     else
-        echo -e "${RED}❌ Fichier .env.example introuvable${NC}"
+        echo -e "${RED} Fichier .env.example introuvable${NC}"
         exit 1
     fi
 else
-    echo -e "${GREEN}✅ Fichier .env trouvé${NC}"
+    echo -e "${GREEN} Fichier .env trouvé${NC}"
 fi
 
 echo

@@ -30,14 +30,14 @@ const transporter = nodemailer.createTransport({
 app.post('/api/submit-candidature', async (req, res) => {
   try {
     const data = req.body;
-    console.log('📨 Candidature reçue :', data.nom, data.email);
+    console.log(' Candidature reçue :', data.nom, data.email);
 
     // Construire le corps du message
     const body = `
-Nouvelle candidature Ghostech 🚀
+Nouvelle candidature Ghostech 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👤 INFORMATIONS PERSONNELLES
+ INFORMATIONS PERSONNELLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Nom et Prénoms : ${data.nom}
 Âge            : ${data.age}
@@ -47,12 +47,12 @@ WhatsApp       : ${data.whatsapp}
 Email          : ${data.email}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💼 POSTE SOUHAITÉ
+ POSTE SOUHAITÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${data.poste}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🛠️ COMPÉTENCES
+ COMPÉTENCES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Technologies   : ${data.competences}
 Niveau         : ${data.niveau}
@@ -70,7 +70,7 @@ Apport à l'équipe :
 ${data.apport}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📅 DISPONIBILITÉ
+ DISPONIBILITÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Travail à distance : ${data.remote}
 Heures/semaine     : ${data.heures}
@@ -94,9 +94,9 @@ Ghostech – Innover. Apprendre. Construire.
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: data.email,
-      subject: '✅ Votre candidature Ghostech a été reçue',
+      subject: ' Votre candidature Ghostech a été reçue',
       html: `
-        <h2>Merci ${data.nom} ! 🎉</h2>
+        <h2>Merci ${data.nom} ! </h2>
         <p>Votre candidature pour le poste de <strong>${data.poste}</strong> a bien été reçue.</p>
         <p>Notre équipe l'examinera attentivement et vous recontactera dans les meilleurs délais.</p>
         <hr style="border:none;border-top:2px solid #2aa8a2;margin:20px 0;">
@@ -112,8 +112,8 @@ Ghostech – Innover. Apprendre. Construire.
       `,
     });
 
-    console.log('✅ Candidature complète envoyée à:', process.env.RECIPIENT_EMAIL);
-    console.log('✅ Confirmation simple envoyée à:', data.email);
+    console.log(' Candidature complète envoyée à:', process.env.RECIPIENT_EMAIL);
+    console.log(' Confirmation simple envoyée à:', data.email);
 
     res.status(200).json({
       success: true,
@@ -137,5 +137,5 @@ app.get('/api/health', (req, res) => {
 // Démarrer le serveur
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ Serveur Ghostech lancé sur http://localhost:${PORT}`);
+  console.log(` Serveur Ghostech lancé sur http://localhost:${PORT}`);
 });

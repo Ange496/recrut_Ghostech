@@ -1,6 +1,6 @@
-# ⚡ DÉMARRAGE RAPIDE - Ghostech
+#  DÉMARRAGE RAPIDE - Ghostech
 
-## 🎯 En 5 minutes, votre formulaire sera fonctionnel !
+##  En 5 minutes, votre formulaire sera fonctionnel !
 
 ### Étape 1 : Installation des dépendances (2 min)
 
@@ -64,12 +64,12 @@ chmod +x run.sh
 1. Ouvrez **`ghostech-recrutement.html`** dans votre navigateur
 2. Remplissez le formulaire
 3. Cliquez **"Envoyer ma candidature"**
-4. ✅ Vous devriez voir "Candidature envoyée !"
+4.  Vous devriez voir "Candidature envoyée !"
 5. Vérifiez votre email `ghostech92@gmail.com`
 
 ---
 
-## ✅ Vérifications
+##  Vérifications
 
 ### Le serveur fonctionne ?
 ```bash
@@ -78,14 +78,14 @@ curl http://localhost:3000/api/health
 ```
 
 ### Les emails ne s'envoient pas ?
-- ✅ Backend lancé ?
-- ✅ `.env` configuré ?
-- ✅ Mot de passe d'application (pas Gmail normal) ?
-- ✅ Vérification en deux étapes activée ?
+-  Backend lancé ?
+-  `.env` configuré ?
+-  Mot de passe d'application (pas Gmail normal) ?
+-  Vérification en deux étapes activée ?
 
 ---
 
-## 🚀 Prêt pour la production ?
+##  Prêt pour la production ?
 
 Voir `SETUP.md` pour :
 - Déploiement sur Render/Railway
@@ -94,7 +94,7 @@ Voir `SETUP.md` pour :
 
 ---
 
-## 📁 Structure finale
+##  Structure finale
 
 ```
 recrut_Ghostech/
@@ -115,4 +115,4 @@ recrut_Ghostech/
 
 ---
 
-**Ghostech © 2026** 🚀 Innover. Apprendre. Construire.
+**Ghostech © 2026**  Innover. Apprendre. Construire.

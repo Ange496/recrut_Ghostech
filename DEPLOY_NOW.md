@@ -1,20 +1,20 @@
-# 🚀 DÉPLOIEMENT FINAL - Ghostech Recrutement
+#  DÉPLOIEMENT FINAL - Ghostech Recrutement
 
 Votre projet est prêt pour être déployé sur Render ! Suivez ces étapes simples.
 
 ---
 
-## ✅ Prérequis
+##  Prérequis
 
-- ✅ Compte GitHub (repo déjà pushé)
-- ✅ Compte Render (gratuit)
-- ✅ Mot de passe d'application Gmail
+-  Compte GitHub (repo déjà pushé)
+-  Compte Render (gratuit)
+-  Mot de passe d'application Gmail
 
 ---
 
-## 🎯 ÉTAPES DE DÉPLOIEMENT (5 min)
+##  ÉTAPES DE DÉPLOIEMENT (5 min)
 
-### ÉTAPE 1️⃣ : Créer un compte Render
+### ÉTAPE 1️ : Créer un compte Render
 
 1. Allez sur **https://render.com**
 2. Cliquez **Sign Up**
@@ -23,7 +23,7 @@ Votre projet est prêt pour être déployé sur Render ! Suivez ces étapes simp
 
 ---
 
-### ÉTAPE 2️⃣ : Créer un Web Service
+### ÉTAPE 2️: Créer un Web Service
 
 1. Dans le dashboard, cliquez **New** > **Web Service**
 2. Sélectionnez le repo **`recrut_Ghostech`**
@@ -38,7 +38,7 @@ Votre projet est prêt pour être déployé sur Render ! Suivez ces étapes simp
 
 ---
 
-### ÉTAPE 3️⃣ : Variables d'environnement
+### ÉTAPE 3️: Variables d'environnement
 
 Cliquez sur **Environment** et ajoutez ces variables :
 
@@ -60,7 +60,7 @@ Cliquez sur **Environment** et ajoutez ces variables :
 
 ---
 
-### ÉTAPE 4️⃣ : Déployer
+### ÉTAPE 4️ : Déployer
 
 Cliquez **Create Web Service** et attendez 2-3 minutes.
 
@@ -73,7 +73,7 @@ https://ghostech-recrutement-backend.onrender.com
 
 ---
 
-### ÉTAPE 5️⃣ : Vérifier le déploiement
+### ÉTAPE 5️ : Vérifier le déploiement
 
 Testez que le serveur fonctionne :
 
@@ -84,7 +84,7 @@ curl https://ghostech-recrutement-backend.onrender.com/api/health
 
 ---
 
-### ÉTAPE 6️⃣ : Mettre à jour le frontend
+### ÉTAPE 6️ : Mettre à jour le frontend
 
 Maintenant que votre backend est déployé, mettez à jour le fichier HTML.
 
@@ -106,7 +106,7 @@ const API_URL = 'https://ghostech-recrutement-backend.onrender.com';
 
 ---
 
-### ÉTAPE 7️⃣ : Pousser sur GitHub
+### ÉTAPE 7️ : Pousser sur GitHub
 
 Les changements du frontend seront automatiquement détectés et redéployés par Render :
 
@@ -117,23 +117,23 @@ git commit -m "Update backend URL for Render deployment"
 git push origin main
 ```
 
-Render détecte les changements et redéploie automatiquement ! ✨
+Render détecte les changements et redéploie automatiquement ! 
 
 ---
 
-### ÉTAPE 8️⃣ : Tester le formulaire
+### ÉTAPE 8️ : Tester le formulaire
 
 1. Ouvrez `ghostech-recrutement.html` dans votre navigateur
 2. Remplissez le formulaire complet
 3. Cliquez **Envoyer ma candidature**
-4. Vous devriez voir ✅ **Candidature envoyée !**
+4. Vous devriez voir  **Candidature envoyée !**
 5. Vérifiez vos emails :
    - **ghostech92@gmail.com** : reçoit la candidature complète
    - **Votre mail** : reçoit la confirmation
 
 ---
 
-## 📊 Flux d'emails en production
+##  Flux d'emails en production
 
 ```
 Candidat remplit le formulaire
@@ -145,61 +145,61 @@ Backend Render reçoit les données
 Email 1 : Candidature complète → ghostech92@gmail.com
 Email 2 : Confirmation simple → Mail du candidat
             ↓
-Écran "Candidature envoyée !" ✅
+Écran "Candidature envoyée !" 
 ```
 
 ---
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
-### ❌ "Service not starting"
+###  "Service not starting"
 - Vérifiez les **logs** dans Render (onglet Logs)
 - Vérifiez que **EMAIL_PASS** est correct
 - Attendez 2-3 min
 
-### ❌ "Build failed"
+###  "Build failed"
 - Vérifiez que `render.yaml` existe
 - Vérifiez que `backend/package.json` existe
 - Regardez les logs
 
-### ❌ "CORS error" / "Cannot fetch"
+###  "CORS error" / "Cannot fetch"
 - Vérifiez l'URL dans le HTML
 - Vérifiez que Render affiche "Active"
 - Testez l'URL avec curl
 
-### ❌ "Email not sent"
+###  "Email not sent"
 - Vérifiez **EMAIL_PASS** dans Render
 - Vérifiez la vérification 2FA Gmail activée
 - Vérifiez que c'est un mot de passe d'application (pas le mot de passe Gmail)
 
 ---
 
-## 🎯 Récapitulatif
+##  Récapitulatif
 
 | Étape | Status | Notes |
 |-------|--------|-------|
-| 1. Créer compte Render | ⭕ À faire | Allez sur render.com |
-| 2. Créer Web Service | ⭕ À faire | Repo GitHub connecté |
-| 3. Variables d'env | ⭕ À faire | Ajouter EMAIL_PASS |
-| 4. Déployer | ⭕ À faire | Cliquer "Create" |
-| 5. Vérifier | ⭕ À faire | Tester /api/health |
-| 6. Mettre à jour HTML | ⭕ À faire | URL de Render |
-| 7. Pousser sur GitHub | ⭕ À faire | git push |
-| 8. Tester formulaire | ⭕ À faire | Complet ! |
+| 1. Créer compte Render |  À faire | Allez sur render.com |
+| 2. Créer Web Service |  À faire | Repo GitHub connecté |
+| 3. Variables d'env |  À faire | Ajouter EMAIL_PASS |
+| 4. Déployer |  À faire | Cliquer "Create" |
+| 5. Vérifier |  À faire | Tester /api/health |
+| 6. Mettre à jour HTML |  À faire | URL de Render |
+| 7. Pousser sur GitHub |  À faire | git push |
+| 8. Tester formulaire |  À faire | Complet ! |
 
 ---
 
-## ✨ Après le déploiement
+##  Après le déploiement
 
-- ✅ **Gratuit** : 500h/mois sur Render (plus que suffisant)
-- ✅ **Automatique** : Chaque push GitHub = redéploiement automatique
-- ✅ **Logs** : Consultables en temps réel dans Render
-- ✅ **HTTPS** : Inclus automatiquement
-- ✅ **Uptime** : 99.5%
+-  **Gratuit** : 500h/mois sur Render (plus que suffisant)
+-  **Automatique** : Chaque push GitHub = redéploiement automatique
+-  **Logs** : Consultables en temps réel dans Render
+-  **HTTPS** : Inclus automatiquement
+-  **Uptime** : 99.5%
 
 ---
 
-## 📞 Besoin d'aide ?
+##  Besoin d'aide ?
 
 - **Render Docs** : https://render.com/docs
 - **Node.js** : https://nodejs.org/
@@ -207,4 +207,4 @@ Email 2 : Confirmation simple → Mail du candidat
 
 ---
 
-**Ghostech © 2026** 🚀 Innover. Apprendre. Construire.
+**Ghostech © 2026**  Innover. Apprendre. Construire.
