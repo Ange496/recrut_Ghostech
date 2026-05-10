@@ -30,10 +30,10 @@ cd backend
 :: Vérifier si node_modules existe
 if not exist "node_modules" (
     echo.
-    echo 📥 Installation des dépendances...
+    echo  Installation des dépendances...
     call npm install
     if %ERRORLEVEL% neq 0 (
-        echo ❌ Erreur lors de l'installation des dépendances
+        echo  Erreur lors de l'installation des dépendances
         pause
         exit /b 1
     )

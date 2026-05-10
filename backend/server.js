@@ -61,7 +61,7 @@ ${data.projetsDetail ? 'Détails projets : ' + data.projetsDetail : ''}
 Portfolio      : ${data.portfolio || 'Non renseigné'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔥 MOTIVATION
+ MOTIVATION
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Pourquoi Ghostech ?
 ${data.motivation}
@@ -84,7 +84,7 @@ Ghostech – Innover. Apprendre. Construire.
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.RECIPIENT_EMAIL || 'ghostech92@gmail.com',
-      subject: `🚀 Candidature Ghostech – ${data.poste} – ${data.nom}`,
+      subject: ` Candidature Ghostech – ${data.poste} – ${data.nom}`,
       text: body,
       html: `<pre>${body}</pre>`,
       replyTo: data.email,
