@@ -80,7 +80,7 @@ Engagement actif   : ${data.engagement}
 Ghostech – Innover. Apprendre. Construire.
     `.trim();
 
-    // Envoyer l'email
+    // Envoyer l'email de candidature AVEC TOUS LES DÉTAILS À L'ÉQUIPE
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.RECIPIENT_EMAIL || 'ghostech92@gmail.com',
@@ -90,7 +90,7 @@ Ghostech – Innover. Apprendre. Construire.
       replyTo: data.email,
     });
 
-    // Envoyer un email de confirmation au candidat
+    // Envoyer un email de CONFIRMATION SIMPLE au candidat
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: data.email,
@@ -100,13 +100,20 @@ Ghostech – Innover. Apprendre. Construire.
         <p>Votre candidature pour le poste de <strong>${data.poste}</strong> a bien été reçue.</p>
         <p>Notre équipe l'examinera attentivement et vous recontactera dans les meilleurs délais.</p>
         <hr style="border:none;border-top:2px solid #2aa8a2;margin:20px 0;">
+        <p><strong>Prochaines étapes :</strong></p>
+        <ul>
+          <li>Les profils présélectionnés seront contactés via WhatsApp/Email</li>
+          <li>Un entretien sera organisé en ligne</li>
+          <li>Nous échangerons sur votre motivation, vos compétences et votre vision</li>
+        </ul>
+        <hr style="border:none;border-top:2px solid #2aa8a2;margin:20px 0;">
         <p><strong>Ghostech</strong> – Innover. Apprendre. Construire.</p>
-        <p><small>ghostech92@gmail.com</small></p>
+        <p><small>Email : ghostech92@gmail.com</small></p>
       `,
     });
 
-    console.log('✅ Email envoyé à:', process.env.RECIPIENT_EMAIL);
-    console.log('✅ Confirmation envoyée à:', data.email);
+    console.log('✅ Candidature complète envoyée à:', process.env.RECIPIENT_EMAIL);
+    console.log('✅ Confirmation simple envoyée à:', data.email);
 
     res.status(200).json({
       success: true,
