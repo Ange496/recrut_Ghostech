@@ -1,0 +1,26 @@
+{
+  "name": "ghostech-recrutement-backend",
+  "version": "1.0.0",
+  "description": "Backend pour le formulaire de recrutement Ghostech",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "ghostech",
+    "recrutement",
+    "formulaire"
+  ],
+  "author": "Ghostech",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "nodemailer": "^6.9.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
